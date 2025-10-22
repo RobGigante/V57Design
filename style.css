@@ -4,7 +4,7 @@ body {
   padding: 0;
   line-height: 1.6;
   background-color: #F3F1EC;
-  color: #E35D2F;
+  color: #4B2E1E;
 }
 
 /* Center and frame the content */
@@ -28,7 +28,7 @@ body {
 /* Remove gray backgrounds */
 header, main, footer {
   background-color: #F3F1EC;
-  color: #E35D2F;
+  color: #4B2E1E;
 }
 
 section {
