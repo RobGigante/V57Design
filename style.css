@@ -2,10 +2,10 @@
   Font Declaration
 --------------------------*/
 @font-face {
-    font-family: 'vladimir'; /* Name you will use in CSS */
-    src: url('fonts/vladimir.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'vladimir';
+  src: url('fonts/vladimir.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*--------------------------
@@ -20,9 +20,10 @@ body {
   color: #4B2E1E;
 }
 
+/* Container for framed layout */
 .container {
   max-width: 1200px;  /* controls how wide your content can get */
-  margin: 0 auto;     /* centers the container horizontally */
+  margin: 0 auto;     /* centers horizontally */
   padding: 0 3rem;    /* adds left and right breathing room */
 }
 
@@ -30,7 +31,9 @@ section {
   margin-bottom: 2rem;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   background-color: #F3F1EC;
   color: #4B2E1E;
 }
@@ -44,7 +47,7 @@ header, main, footer {
   width: 100%;
   max-width: 1200px;
   margin: 2rem auto;
-  border-radius: 16px; 
+  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   background-color: #F3F1EC;
@@ -65,7 +68,7 @@ header, main, footer {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'vladimir', cursive, Arial, sans-serif; /* Use your custom font here */
+  font-family: 'vladimir', cursive, Arial, sans-serif;
   font-weight: bold;
   font-size: 95pt;
   color: #4B2E1E;
@@ -75,16 +78,48 @@ header, main, footer {
 }
 
 /*--------------------------
-  Responsive Hero Text
+  Responsive Hero Text & Layout
 --------------------------*/
+
+/* Tablet adjustments */
 @media (max-width: 1024px) {
   .hero-text {
-    font-size: 100pt;
+    font-size: 70pt;
   }
 }
 
+/* Mobile adjustments */
 @media (max-width: 600px) {
+
+  /* Make hero banner edge-to-edge */
+  .hero-banner {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: none; /* remove frame border for mobile */
+  }
+
+  /* Ensure image fills width */
+  .hero-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Scale hero text and allow wrapping */
   .hero-text {
-    font-size: 60pt;
+    font-size: 48pt;
+    white-space: normal;  /* allows text to wrap */
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+
+/* Tiny phones (optional fine-tune) */
+@media (max-width: 400px) {
+  .hero-text {
+    font-size: 36pt;
   }
 }
