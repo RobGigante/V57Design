@@ -3,47 +3,28 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #6B6B6B;
-  color: #333;
+  background-color: #F3F1EC; /* background for the entire page */
+  color: #E35D2F; /* default font color */
 }
 
-header {
-  background-color: #6B6B6B;
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-main {
-  padding: 2rem 1rem;
+/* Remove gray backgrounds */
+header, main, footer {
+  background-color: #F3F1EC;
+  color: #E35D2F;
 }
 
 section {
   margin-bottom: 2rem;
 }
 
-footer {
-  background-color: #6B6B6B;
-  color: #ccc;
-  text-align: center;
-  padding: 1rem;
-}
-
-/* Load Vladimir Script font */
-@font-face {
-  font-family: 'Vladimir Script';
-  src: url('fonts/vladiir.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* HERO BANNER IMAGE */
+/* Keep hero banner separate */
 .hero-banner {
   position: relative;
   display: block;
   width: 100%;
   margin: 0;
   padding: 0;
+  background: none; /* ensures it’s not tinted */
 }
 
 .hero-banner img {
@@ -52,7 +33,7 @@ footer {
   display: block;
 }
 
-/* CENTERED HERO TEXT */
+/* HERO TEXT */
 .hero-text {
   position: absolute;
   top: 50%;
@@ -60,22 +41,22 @@ footer {
   transform: translate(-50%, -50%);
   font-family: 'Vladimir Script', cursive;
   font-weight: bold;
-  font-size: 164pt; /* desktop size */
-  color: #4B2E1E;
+  font-size: 164pt;
+  color: #4B2E1E; /* stays distinct */
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   white-space: nowrap;
 }
 
-/* Responsive font sizes */
+/* Responsive text sizing */
 @media (max-width: 1024px) {
   .hero-text {
-    font-size: 100pt; /* tablet */
+    font-size: 100pt;
   }
 }
 
 @media (max-width: 600px) {
   .hero-text {
-    font-size: 60pt; /* mobile */
+    font-size: 60pt;
   }
 }
