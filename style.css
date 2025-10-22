@@ -39,19 +39,20 @@ footer {
 }
 
 /*--------------------------
-  Hero Banner
+  Hero Text
 --------------------------*/
-.hero-banner {
-  position: relative;
-  display: block;
-  width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  background-color: #F3F1EC;
-  border: 6px solid #4B2E1E;
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'vladimir', cursive, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 95pt;
+  color: #4B2E1E;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  white-space: nowrap;
 }
 
 .hero-banner img {
@@ -82,54 +83,30 @@ footer {
 --------------------------*/
 .tagline {
   text-align: center;
+  font-family: 'vladimir', cursive, Arial, sans-serif;
   font-size: 2rem;
   color: #4B2E1E;
   margin-top: 1rem;
   margin-bottom: 2rem;
   font-weight: 500;
-  font-family: Arial, sans-serif; /* Changed to match body font */
 }
 
 /*--------------------------
   Responsive Adjustments
 --------------------------*/
-
-/* Tablet adjustments */
 @media (max-width: 1024px) {
   .hero-text {
     font-size: 70pt;
   }
 }
 
-/* Mobile adjustments */
 @media (max-width: 700px) {
-  .hero-banner {
-    max-width: 100%;
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
-  }
-
-  .hero-banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
   .hero-text {
     font-size: 36pt;
-    white-space: nowrap;
-    overflow: hidden;
-    padding: 0 1rem;
-    text-align: center;
   }
 
   .tagline {
-    font-family: 'vladimir', cursive, Arial, sans-serif;
-    font-size: 2.5rem;
-    margin: 1rem auto;
+    font-size: 1.2rem; /* smaller on phones */
     padding: 0 1rem;
   }
 }
