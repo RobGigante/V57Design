@@ -111,14 +111,15 @@ footer {
   /* Scale hero text and allow wrapping */
   .hero-text {
     font-size: 48pt;
-    white-space: normal;  /* allows text to wrap */
+    white-space: nowrap;  /* stops text from wrapping */
+    overflow: hidden; /* hides any overflowing text */
     padding: 0 1rem;
     text-align: center;
   }
 }
 
 /* Tiny phones (optional fine-tune) */
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .hero-text {
     font-size: 36pt;
   }
