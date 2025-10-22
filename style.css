@@ -22,7 +22,7 @@ body {
   overflow: hidden; /* ensures image and text follow rounded shape */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
   background-color: #F3F1EC; /* ensures clean background behind image edges */
-  border: 6px solid #E35D2F;
+  border: 6px solid #4B2E1E;
 }
 
 /* Remove gray backgrounds */
