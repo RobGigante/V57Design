@@ -3,8 +3,26 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #F3F1EC; /* background for the entire page */
-  color: #E35D2F; /* default font color */
+  background-color: #F3F1EC;
+  color: #E35D2F;
+}
+
+/* Center and frame the content */
+.container {
+  max-width: 1200px;   /* adjust this for how wide you want the frame */
+  margin: 0 auto;      /* centers it */
+  padding: 0 1rem;     /* gives space inside the edges */
+}
+
+/* Apply the container to the hero */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto; /* centers banner and adds space above/below */
+  border: 8px solid #F3F1EC; /* optional light frame edge */
+  overflow: hidden;
+  border-radius: 12px; /* optional rounded edges */
 }
 
 /* Remove gray backgrounds */
@@ -33,7 +51,7 @@ section {
   display: block;
 }
 
-/* HERO TEXT */
+/* Hero Text */
 .hero-text {
   position: absolute;
   top: 50%;
@@ -42,7 +60,7 @@ section {
   font-family: 'Vladimir Script', cursive;
   font-weight: bold;
   font-size: 164pt;
-  color: #4B2E1E; /* stays distinct */
+  color: #4B2E1E;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   white-space: nowrap;
