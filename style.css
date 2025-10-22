@@ -118,6 +118,18 @@ footer {
   }
 }
 
+/*--------------------------
+  Tagline under Hero Banner
+--------------------------*/
+.tagline {
+  text-align: center;
+  font-size: 2rem; /* adjust as you like */
+  color: #4B2E1E;
+  margin-top: 1rem;   /* spacing below hero */
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-family: 'vladimir', cursive, Arial, sans-serif;
+}
 /* Tiny phones (optional fine-tune) */
 @media (max-width: 700px) {
   .hero-text {
