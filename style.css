@@ -14,15 +14,15 @@ body {
   padding: 0 1rem;     /* gives space inside the edges */
 }
 
-/* Apply the container to the hero */
 .hero-banner {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  margin: 2rem auto; /* centers banner and adds space above/below */
-  border: 8px solid #F3F1EC; /* optional light frame edge */
-  overflow: hidden;
-  border-radius: 12px; /* optional rounded edges */
+  margin: 2rem auto; /* centers and adds top/bottom space */
+  border-radius: 16px; /* smooth rounded corners */
+  overflow: hidden; /* ensures image and text follow rounded shape */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
+  background-color: #F3F1EC; /* ensures clean background behind image edges */
 }
 
 /* Remove gray backgrounds */
