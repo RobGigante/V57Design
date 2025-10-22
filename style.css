@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #f8f8f8;
+  background-color: #6B6B6B;
   color: #333;
 }
 
@@ -61,7 +61,7 @@ footer {
   font-family: 'Vladimir Script', cursive;
   font-weight: bold;
   font-size: 164pt; /* desktop size */
-  color: white;
+  color: #4B2E1E;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   white-space: nowrap;
