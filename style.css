@@ -12,7 +12,7 @@
   Global Styles
 --------------------------*/
 body {
-  font-family: Arial, sans-serif; /* fallback for all non-hero text */
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -22,9 +22,9 @@ body {
 
 /* Container for framed layout */
 .container {
-  max-width: 1200px;  /* controls how wide your content can get */
-  margin: 0 auto;     /* centers horizontally */
-  padding: 0 3rem;    /* adds left and right breathing room */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
 }
 
 section {
@@ -78,7 +78,20 @@ footer {
 }
 
 /*--------------------------
-  Responsive Hero Text & Layout
+  Tagline under Hero Banner
+--------------------------*/
+.tagline {
+  text-align: center;
+  font-size: 2rem;
+  color: #4B2E1E;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  font-family: Arial, sans-serif; /* Changed to match body font */
+}
+
+/*--------------------------
+  Responsive Adjustments
 --------------------------*/
 
 /* Tablet adjustments */
@@ -89,50 +102,33 @@ footer {
 }
 
 /* Mobile adjustments */
-@media (max-width: 600px) {
-
-  /* Make hero banner edge-to-edge */
+@media (max-width: 700px) {
   .hero-banner {
     max-width: 100%;
     width: 100%;
     margin: 0;
     border-radius: 0;
     box-shadow: none;
-    border: none; /* remove frame border for mobile */
+    border: none;
   }
 
-  /* Ensure image fills width */
   .hero-banner img {
     width: 100%;
     height: auto;
     display: block;
   }
 
-  /* Scale hero text and allow wrapping */
   .hero-text {
-    font-size: 48pt;
-    white-space: nowrap;  /* stops text from wrapping */
-    overflow: hidden; /* hides any overflowing text */
+    font-size: 36pt;
+    white-space: nowrap;
+    overflow: hidden;
     padding: 0 1rem;
     text-align: center;
   }
-}
 
-/*--------------------------
-  Tagline under Hero Banner
---------------------------*/
-.tagline {
-  text-align: center;
-  font-size: 2rem; /* adjust as you like */
-  color: #4B2E1E;
-  margin-top: 1rem;   /* spacing below hero */
-  margin-bottom: 2rem;
-  font-weight: 500;
-  font-family: 'vladimir', cursive, Arial, sans-serif;
-}
-/* Tiny phones (optional fine-tune) */
-@media (max-width: 700px) {
-  .hero-text {
-    font-size: 36pt;
+  .tagline {
+    font-size: 1.4rem;
+    margin: 1rem auto;
+    padding: 0 1rem;
   }
 }
