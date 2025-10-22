@@ -7,11 +7,10 @@ body {
   color: #4B2E1E;
 }
 
-/* Center and frame the content */
 .container {
-  max-width: 1200px;   /* adjust this for how wide you want the frame */
-  margin: 0 auto;      /* centers it */
-  padding: 0 1rem;     /* gives space inside the edges */
+  max-width: 1200px;  /* controls how wide your content can get */
+  margin: 0 auto;     /* centers the container horizontally */
+  padding: 0 3rem;    /* adds left and right breathing room */
 }
 
 .hero-banner {
@@ -23,6 +22,7 @@ body {
   overflow: hidden; /* ensures image and text follow rounded shape */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
   background-color: #F3F1EC; /* ensures clean background behind image edges */
+  border: 6px solid #E35D2F;
 }
 
 /* Remove gray backgrounds */
