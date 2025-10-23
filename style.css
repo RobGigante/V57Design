@@ -20,7 +20,6 @@ body {
   color: #4B2E1E;
 }
 
-/* Container for framed layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -39,27 +38,20 @@ footer {
 }
 
 /*--------------------------
-  Hero Text
+  Hero Banner
 --------------------------*/
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'vladimir', cursive, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 95pt;
-  color: #4B2E1E;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  white-space: nowrap;
+.hero-banner {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
 }
 
+.hero-banner picture,
 .hero-banner img {
   width: 100%;
   height: auto;
   display: block;
-  position: relative;
 }
 
 /*--------------------------
@@ -75,8 +67,9 @@ footer {
   font-size: 95pt;
   color: #4B2E1E;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   white-space: nowrap;
+  line-height: 1;
 }
 
 /*--------------------------
@@ -87,7 +80,7 @@ footer {
   font-family: 'vladimir', cursive, Arial, sans-serif;
   font-size: 2rem;
   color: #4B2E1E;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
   font-weight: 500;
 }
@@ -107,7 +100,7 @@ footer {
   }
 
   .tagline {
-    font-size: 1.2rem; /* smaller on phones */
+    font-size: 1.2rem;
     padding: 0 1rem;
   }
 }
